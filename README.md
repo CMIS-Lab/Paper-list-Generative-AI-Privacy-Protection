@@ -1,4 +1,4 @@
-# 🛡️ Backdoor Defense Papers Collection
+# 🛡️ Generative AI Privacy Protection Papers Collection
 
 > 📚 **A comprehensive collection of research papers on backdoor defenses in machine learning.**  
 > 🎓 **Maintained by**: Dr. [Your Name] | [Your Affiliation] | [Your Email/Website]
