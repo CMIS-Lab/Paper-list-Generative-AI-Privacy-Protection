@@ -21,9 +21,9 @@ This repository serves as a curated collection of academic papers focusing on **
 
 <h2 id="awesome-papers"> 👑 Awesome Papers List </h2>
 
-<h3 id="privacy defense"> Privacy Defenses in Generative AI </h3>
+<h3 id="Privacy-Preserving"> Privacy-Preserving </h3>
 
-<h4 id="privacy defense 2023"> 2023 </h4>
+<h4 id="Privacy-Preserving 2023"> 2023 </h4>
 
 * **[2023.02.09]** **[Adversarial Example Does Good: Preventing Painting Imitation from Diffusion Models via Adversarial Examples](https://openreview.net/forum?id=Wbquvk97t4)** ![Static Badge](https://img.shields.io/badge/ICML'23-6c757d) [![GitHub stars](https://img.shields.io/github/stars/hypknot74/Paper-summaries?style=social)](https://github.com/hypknot74/Paper-summaries)
   * Chumeng Liang, Xiaoyu Wu, Yang Hua, Jiaru Zhang, Yiming Xue, Tao Song, Zhengui XUE, Ruhui Ma, Haibing Guan
@@ -32,12 +32,22 @@ This repository serves as a curated collection of academic papers focusing on **
   * **🔧 Method**: ⭐⭐⭐ (3/5) - AdvDM creates an adversarial sample by optimizing perturbations to maximize loss by Monte Carlo estimation for various latent variables sampled during the retrodispersion process.
 
 * **[2023.11.22]** **[MetaCloak: Preventing Unauthorized Subject-driven Text-to-image Diffusion-based Synthesis via Meta-learning]([https://openreview.net/forum?id=Wbquvk97t4](https://openaccess.thecvf.com/content/CVPR2024/papers/Liu_MetaCloak_Preventing_Unauthorized_Subject-driven_Text-to-image_Diffusion-based_Synthesis_via_Meta-learning_CVPR_2024_paper.pdf))** ![Static Badge](https://img.shields.io/badge/CVPR'24-6c757d) [![GitHub stars](https://img.shields.io/github/stars/liuyixin-louis/MetaCloak?style=social)](https://github.com/liuyixin-louis/MetaCloak)
- * Yixin Liu; Chenrui Fan; Yutong Dai; Xun Chen; Pan Zhou; Lichao Sun
+  * Yixin Liu, Chenrui Fan, Yutong Dai, Xun Chen, Pan Zhou, Lichao Sun
   * **📝 Summary**: Primarily addresses the transferability and robustness issues of adversarial-based methods targeting personalized generative model.  
-  * **💡 Motivation**: ⭐⭐⭐⭐⭐ (4/5) -  Defines existing adversarial-based methods for personalized generation as a bi-level optimization problem, which hand-crafted approaches struggle to handle.  
-  * **🔧 Method**: ⭐⭐⭐ (3/5) - Solves the bi-level optimization problem with a meta-learning framework with an additional transformation sampling process to craft transferable and robust perturbation.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) -  Defines existing adversarial-based methods for personalized generation as a bi-level optimization problem, which hand-crafted approaches struggle to handle.  
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Solves the bi-level optimization problem with a meta-learning framework with an additional transformation sampling process to craft transferable and robust perturbation.
 
 
-<h4 id="privacy defense 2024"> 2024 </h4>
+<h4 id="Privacy-Preserving 2024"> 2024 </h4>
 
-<h4 id="privacy defense 2025"> 2025 </h4>
+* **[2024.05.31]** **[Watermark-embedded Adversarial Examples for Copyright Protection against Diffusion Models](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhu_Watermark-embedded_Adversarial_Examples_for_Copyright_Protection_against_Diffusion_Models_CVPR_2024_paper.pdf)** ![Static Badge](https://img.shields.io/badge/CVPR'24-6c757d) 
+  * Peifei Zhu, Tsubasa Takahashi, Hirokatsu Kataoka
+  * **📝 Summary**: A fast and visible solution for protecting and tracing copyrighted content from imitation by diffusion models.
+  * **💡 Motivation**: ⭐⭐⭐⭐⭐ (5/5) - Generates adversarial samples to prevent copyright infringement by diffusion models, forcing them to produce visibly watermarked images for copyright tracking.
+  * **🔧 Method**: ⭐⭐⭐ (3/5) - Uses a conditional GAN to train a generator for crafting adversarial examples.
+
+
+
+<h4 id="Privacy-Preserving 2025"> 2025 </h4>
+
+<h3 id="Privacy-Violating"> Privacy-Violating </h3>
