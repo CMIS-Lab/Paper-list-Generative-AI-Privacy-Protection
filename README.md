@@ -51,3 +51,15 @@ This repository serves as a curated collection of academic papers focusing on **
 <h4 id="Privacy-Preserving 2025"> 2025 </h4>
 
 <h3 id="Privacy-Violating"> Privacy-Violating </h3>
+<h4 id="Privacy-Violating 2024"> 2024 </h4>
+
+
+* **[2024.06.21]** **[EvilEdit: Backdooring Text-to-Image Diffusion Models in One Second](https://openreview.net/forum?id=ibEaSS6bQn)** ![Static Badge](https://img.shields.io/badge/ACMMM'24-6c757d) [![GitHub stars](https://img.shields.io/github/stars/haowang02/EvilEdit?style=social)](https://github.com/haowang02/EvilEdit)
+  * Hao Wang, Shangwei Guo, Jialing He, Kangjie Chen, Shudong Zhang, Tianwei Zhang, Tao Xiang
+  * **📝 Summary**: Backdoor insertion for text-to-image diffusion models is achieved in a training-free and data-free manner by adopting a lightweight model editing approach.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - A closed-form global minimizer of backdoor model weights derived from the loss function removes the reliance on poisoned datasets and fine-tuning.
+  * **🔧 Method**: ⭐⭐⭐ (3/5) - Projection matrices in the cross-attention layers of the diffusion model are directly edited to align the trigger with its corresponding backdoor target.
+ 
+ 
+
+
