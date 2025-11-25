@@ -80,7 +80,7 @@ This repository serves as a curated collection of academic papers focusing on **
   * Ang Li, Yichuan Mo, Mingjie Li, Yisen Wang
   * **📝 Summary**: PID prevents misused few-shot personalization of Latent Diffusion Models by manipulating the visual encoder in a prompt-independent manner.
   * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing defenses assume protectors and attackers use identical textual prompts, but mismatched conditions significantly reduce their effectiveness; thus a prompt-agnostic defense is needed.
-  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Investigates how perturbing the visual encoder affects LDM fine-tuning and introduces a lightweight mechanism that disrupts concept learning regardless of the attacker’s prompt.
+  * **🔧 Method**: ⭐⭐⭐ (3/5) - Investigates how perturbing the visual encoder affects LDM fine-tuning and introduces a lightweight mechanism that disrupts concept learning regardless of the attacker’s prompt.
 
 * **[2024.05.30]** **[Perturbing Attention Gives You More Bang for the Buck: Subtle Imaging Perturbations That Efficiently Fool Customized Diffusion Models](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_Perturbing_Attention_Gives_You_More_Bang_for_the_Buck_Subtle_CVPR_2024_paper.pdf)** ![Static Badge](https://img.shields.io/badge/CVPR'24-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/CO2-cityao/CAAT?style=social)](https://github.com/CO2-cityao/CAAT)
   * Jingyao Xu, Siyang Lu, Yuetong Lu, Dongdong Wang, Yandong Li, Xiang Wei
@@ -106,6 +106,24 @@ This repository serves as a curated collection of academic papers focusing on **
   * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - It aims to reveal and leverage step-wise vulnerability variations in the reverse diffusion process to design more effective adversarial attacks against conditional diffusion models.
   * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - It models step vulnerability to guide sampling of attack-critical timesteps and optimizes perturbations on the conditioning input to maximize the expected mean shift of predicted noise.
 
+* **[2024.01.13]** **[Exploring Adversarial Attacks against Latent Diffusion Model from the Perspective of Adversarial Transferability](https://arxiv.org/abs/2401.07087)**
+  * Junxi Chen, Junhao Dong, Xiaohua Xie
+  * **📝 Summary**: This work studies how the properties of surrogate models affect adversarial transferability in LDMs and shows that selecting smoother surrogate models enhances the effectiveness of adversarial examples.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - EExisting approaches suffer from transferability gaps because surrogate models inevitably differ from the target LDMs, reducing the cross-model effectiveness of generated adversarial examples.
+  * **🔧 Method**: ⭐⭐ (2/5) - The method treats timestep sampling in Monte Carlo-based adversarial attacks as surrogate model selection and boosts attack success by preferentially sampling timesteps corresponding to smoother surrogate models.
+
+* **[2024.08.20]** **[Prompt-Agnostic Adversarial Perturbation for Customized Diffusion Models](https://proceedings.neurips.cc/paper_files/paper/2024/hash/f6b35e248a21c71ff1cd47b8919fca83-Abstract-Conference.html)** ![Static Badge](https://img.shields.io/badge/NIPS'24-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/vancyland/Prompt-Agnostic-Adversarial-Perturbation-for-Customized-Diffusion-Models?style=social)](https://github.com/vancyland/Prompt-Agnostic-Adversarial-Perturbation-for-Customized-Diffusion-Models.github.io)
+  * Cong Wan, Yuhang He, Xiang Song, Yihong Gong
+  * **📝 Summary**: This work introduces a prompt-agnostic adversarial perturbation (PAP) method that protects diffusion models from malicious personalization regardless of prompt variations.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing defenses struggle to generalize because their effectiveness collapses when prompts change, limiting protection in real-world diffusion-based generation.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - PAP models the prompt distribution in the embedding space using a Laplace approximation and generates prompt-agnostic perturbations by maximizing the expected disturbance under this learned distribution.
+
+* **[2024.11.25]** **[Privacy Protection in Personalized Diffusion Models via Targeted Cross-Attention Adversarial Attack](https://arxiv.org/abs/2411.16437)**
+  * Xide Xu, Muhammad Atif Butt, Sandesh Kamath, Bogdan Raducanu
+  * **📝 Summary**: The method disrupts personalization by forcing a divergence between user-specific and class-specific cross-attention maps during personalized fine-tuning.
+  * **💡 Motivation**: ⭐⭐ (2/5) - The work addresses privacy risks in personalized diffusion models by preventing attackers from reconstructing or impersonating an individual’s identity.
+  * **🔧 Method**: ⭐⭐ (2/5) - The approach minimizes the cosine similarity between the cross-attention representations of the user-specific token and the class token using a PGD-based perturbation scheme.
+
   
 <h4 id="Privacy-Preserving 2025"> 2025 </h4>
 
@@ -115,6 +133,50 @@ This repository serves as a curated collection of academic papers focusing on **
   * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing adversarial perturbation defenses for T2I diffusion models lack robustness and cannot fully remove identifiable features.  
   * **🔧 Method**: ⭐⭐⭐ (3/5) - PersGuard injects backdoors into pretrained models with three objectives (Pattern, Erasure, Target), and converts the trigger mechanism into a shortcut such that the backdoor is activated by fine-tuning on a specific image set.
 
+* **[2025.05.15]** **[Towards Reliable Verification of Unauthorized Data Usage in Personalized Text-to-Image Diffusion Models](https://ieeexplore.ieee.org/abstract/document/11023473)** ![Static Badge](https://img.shields.io/badge/S&P'25-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/AntigoneRandy/SIREN?style=social)](https://github.com/AntigoneRandy/SIREN)
+  * Boheng Li; Yanhao Wei; Yankai Fu; Zhenting Wang; Yiming Li; Jie Zhang
+  * **📝 Summary**: The key contribution of this work is a verifiable coating (perturbation) mechanism that reliably reveals unauthorized data usage in personalized diffusion models.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing coating-based traceability methods fail in personalization because the coatings are not learned as meaningful features, making verification weak and unreliable.
+  * **🔧 Method**: ⭐⭐⭐ (3/5) - SIREN optimizes coatings to align with personalization-relevant features and incorporates perceptual constraints, hypersphere classification, and hypothesis-testing–guided verification to boost stealthiness and detection accuracy.
+ 
+* **[2025.02.12]** **[ID-Cloak: Crafting Identity-Specific Cloaks Against Personalized Text-to-Image Generation](https://arxiv.org/abs/2502.08097)** [![GitHub stars](https://img.shields.io/github/stars/ID-Cloak/ID-Cloak?style=social)](https://github.com/ID-Cloak/ID-Cloak/blob/main/README.md)
+  * Qianrui Teng, Xing Cui, Xuannan Liu, Peipei Li, Zekun Li, Huaibo Huang, Ran He
+  * **📝 Summary**:The work constructs a universal, identity-level cloak that protects all images of the same person by perturbing them within a learned identity subspace.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - The goal is to overcome the impracticality of image-specific cloaking by enabling scalable privacy protection against personalized T2I models.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - The approach models an identity semantic subspace in text-embedding space and optimizes a universal perturbation via PGD+SGA to steer generated outputs away from the protected identity.
+
+* **[2025.01.22]** **[Protecting your portraits: Real-time Identity Defense against malicious personalization of diffusion models](https://arxiv.org/html/2412.09844v2)** [![GitHub stars](https://img.shields.io/github/stars/Guohanzhong/RID?style=social)](https://github.com/Guohanzhong/RID)
+  * Hanzhong Guo, Shen Nie, Chao Du, Tianyu Pang, Hao Sun, Chongxuan Li
+  * **📝 Summary**: This work introduces RID, a real-time network that produces adversarial perturbations via a single forward pass, enabling highly efficient and robust identity protection against malicious personalization.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - It aims to overcome the impracticality of optimization-based defenses by developing a fast, deployable, and model-agnostic protection mechanism.
+  * **🔧 Method**: ⭐⭐⭐⭐⭐ (5/5) - RID directly predicts perturbations through an end-to-end network and enhances cross-model and post-processing robustness using an ensemble of diffusion models, eliminating the need for costly per-image optimization.
+ 
+* **[2025.02.28]** **[Latent Diffusion Shield - Mitigating Malicious Use of Diffusion Models Through Latent Space Adversarial Perturbations](https://openaccess.thecvf.com/content/WACV2025W/SynRDinBAS/papers/Phan_Latent_Diffusion_Shield_-_Mitigating_Malicious_Use_of_Diffusion_Models_WACVW_2025_paper.pdf)** ![Static Badge](https://img.shields.io/badge/WACV'25-6c757d)  
+  * Huy Phan; Boshi Huang; Ayush Jaiswal; Ekraam Sabir; Prateek Singhal; Bo Yuan
+  * **📝 Summary**: Proposes a latent-space adversarial protection mechanism that prevents unauthorized diffusion-based image synthesis while keep lightweight.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - Highlights the urgent need for a generalized, lightweight, and real-time defense against malicious personalization and copyright misuse in diffusion models.
+  * **🔧 Method**: ⭐⭐ (2/5) - Offers two variants, an iterative plug-and-play version (LDS-I) and a real-time generative version (LDS-RT), which jointly disrupt both the encoder and U-Net denoising process by optimizing latent-level adversarial noise.
+
+* **[2025.07.21]** **[IDProtector: An Adversarial Noise Encoder to Protect Against ID-Preserving Image Generation](https://openaccess.thecvf.com/content/CVPR2025/html/Song_IDProtector_An_Adversarial_Noise_Encoder_to_Protect_Against_ID-Preserving_Image_CVPR_2025_paper.html)** ![Static Badge](https://img.shields.io/badge/CVPR'25-dc3545) [![GitHub stars](https://img.shields.io/github/stars/yangpei-comp/IDProtector_Preview?style=social)](https://github.com/yangpei-comp/IDProtector_Preview)
+  * Yiren Song, Pei Yang, Hai Ci, Mike Zheng Shou
+  * **📝 Summary**: Provides a universal protection mechanism against encoder-based identity-preserving generation methods—including InstantID, IP-Adapter, and PhotoMaker—by applying imperceptible adversarial noise to portrait images.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - Addresses the emerging privacy risks brought by zero-shot identity-preserving generation methods, which enable instant personalization from a single portrait.
+  * **🔧 Method**: ⭐⭐ (2/5) - Introduces an adversarial noise encoder that generates perturbations in a single forward pass, offering robust and generalizable protection across multiple diffusion models and image transformations, without requiring image-specific optimization.
+
+* **[2025.05.19]** **[Harnessing Global-local Collaborative Adversarial Perturbation for Anti-Customization](https://openaccess.thecvf.com/content/CVPR2025/papers/Xu_Harnessing_Global-Local_Collaborative_Adversarial_Perturbation_for_Anti-Customization_CVPR_2025_paper.pdf)** ![Static Badge](https://img.shields.io/badge/CVPR'25-dc3545) [![GitHub stars](https://img.shields.io/github/stars/xl-yaoyi/GoodAC?style=social)](https://github.com/xl-yaoyi/GoodAC)
+  * Long Xu, Jiakai Wang, Haojie Hao, Haotong Qin, Jiejie Zhao, Xianglong Liu
+  * **📝 Summary**: Proposes GoodAC, a global–local collaborative adversarial framework that enhances anti-customization robustness by simultaneously disrupting global feature correlations and local personalized facial attributes.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing adversarial anti-customization methods overlook hierarchical characteristics, resulting in weak defense against concept transfer and semantic stealing.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Introduces a two-branch strategy: globally breaking spatial correlations in perceptual features to resist concept transfer, and locally distorting identity-specific facial attributes to prevent semantic extraction.
+
+* **[2025.06.02]** **[Adv-CPG: A Customized Portrait Generation Framework with Facial Adversarial Attacks](https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Adv-CPG_A_Customized_Portrait_Generation_Framework_with_Facial_Adversarial_Attacks_CVPR_2025_paper.pdf)** ![Static Badge](https://img.shields.io/badge/CVPR'25-dc3545) [![GitHub stars](https://img.shields.io/github/stars/JunyingWang959/Adv-CPG?style=social)](https://github.com/JunyingWang959/Adv-CPG)
+  *  Junying Wang, Hongyuan Zhang, Yuan Yuan
+  * **📝 Summary**: The first customized portrait generation framework Adv-CPG that embeds facial adversarial attacks to protect identities while enabling fine-grained, controllable portrait synthesis.
+  * **💡 Motivation**: ⭐⭐⭐⭐⭐ (5/5) - Existing customized portrait generation methods produce realistic results but fail to prevent generated portraits from being tracked or misused by face recognition systems.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Designs a two-stage adversarial identity encryption pipeline consisting of a lightweight local ID encryptor and an encryption enhancer for progressive protection, combined with a multimodal customizer that generates precise, fine-grained facial features under adversarial constraints.
+
+   
+ 
 <h3 id="Privacy-Violating"> Privacy-Violating </h3>
 <h4 id="Privacy-Violating 2024"> 2024 </h4>
 
