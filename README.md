@@ -50,10 +50,10 @@ This repository serves as a curated collection of academic papers focusing on **
   * **🔧 Method**: ⭐⭐ (2/5) - Optimizes feature-level distances between the original and target style representations to induce misleading perturbations, causing diffusion models to learn incorrect artistic styles.
 
 * **[2023.09.21]** **[Diffusion-Based Adversarial Sample Generation for Improved Stealthiness and Controllability](https://proceedings.neurips.cc/paper_files/paper/2023/hash/088463cd3126aef2002ffc69da42ec59-Abstract-Conference.html)** ![Static Badge](https://img.shields.io/badge/NIPS'23-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/xavihart/Diff-PGD?style=social)](https://github.com/xavihart/Diff-PGD)
-* Haotian Xue, Alexandre Araujo, Bin Hu, Yongxin Chen
-* **📝 Summary**: This work presents Diff-PGD, a diffusion-guided adversarial sample generation framework that produces realistic, distribution-aligned perturbations with improved transferability and controllability.
-* **💡 Motivation**: ⭐⭐⭐ (3/5) - The method aims to overcome the inherent trade-off between adversarial strength and visual naturalness in traditional gradient-based attacks, which often produce unrealistic perturbations.
-* **🔧 Method**: ⭐⭐⭐⭐⭐ (5/5) - Diff-PGD leverages diffusion-model-guided gradients to constrain perturbations toward natural image manifolds while decoupling adversarial optimization from auxiliary losses to improve stability and task adaptability.
+  * Haotian Xue, Alexandre Araujo, Bin Hu, Yongxin Chen
+  * **📝 Summary**: This work presents Diff-PGD, a diffusion-guided adversarial sample generation framework that produces realistic, distribution-aligned perturbations with improved transferability and controllability.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - The method aims to overcome the inherent trade-off between adversarial strength and visual naturalness in traditional gradient-based attacks, which often produce unrealistic perturbations.
+  * **🔧 Method**: ⭐⭐⭐⭐⭐ (5/5) - Diff-PGD leverages diffusion-model-guided gradients to constrain perturbations toward natural image manifolds while decoupling adversarial optimization from auxiliary losses to improve stability and task adaptability.
 
 
 <h4 id="Privacy-Preserving 2024"> 2024 </h4>
@@ -77,43 +77,43 @@ This repository serves as a curated collection of academic papers focusing on **
   * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Learns model parameters that are inherently difficult for adaptation methods (LoRA, Textual Inversion, DreamBooth) to fine-tune, and applies this before releasing model weights to mitigate malicious personalization.
 
 * **[2024.06.14]** **[PID: Prompt-Independent Data Protection Against Latent Diffusion Models](https://openaccess.thecvf.com/content/C2024/papers/Zhu_Watermark-embedded_Adversarial_Examples_for_Copyright_Protection_against_Diffusion_Models_CVPR_2024_paper.pdf)** ![Static Badge](https://img.shields.io/badge/ICCV'24-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/PKU-ML/Diffusion-PID-Protection?style=social)](https://github.com/PKU-ML/Diffusion-PID-Protection)
-* Ang Li, Yichuan Mo, Mingjie Li, Yisen Wang
-* **📝 Summary**: PID prevents misused few-shot personalization of Latent Diffusion Models by manipulating the visual encoder in a prompt-independent manner.
-* **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing defenses assume protectors and attackers use identical textual prompts, but mismatched conditions significantly reduce their effectiveness; thus a prompt-agnostic defense is needed.
-* **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Investigates how perturbing the visual encoder affects LDM fine-tuning and introduces a lightweight mechanism that disrupts concept learning regardless of the attacker’s prompt.
+  * Ang Li, Yichuan Mo, Mingjie Li, Yisen Wang
+  * **📝 Summary**: PID prevents misused few-shot personalization of Latent Diffusion Models by manipulating the visual encoder in a prompt-independent manner.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing defenses assume protectors and attackers use identical textual prompts, but mismatched conditions significantly reduce their effectiveness; thus a prompt-agnostic defense is needed.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Investigates how perturbing the visual encoder affects LDM fine-tuning and introduces a lightweight mechanism that disrupts concept learning regardless of the attacker’s prompt.
 
 * **[2024.05.30]** **[Perturbing Attention Gives You More Bang for the Buck: Subtle Imaging Perturbations That Efficiently Fool Customized Diffusion Models](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_Perturbing_Attention_Gives_You_More_Bang_for_the_Buck_Subtle_CVPR_2024_paper.pdf)** ![Static Badge](https://img.shields.io/badge/CVPR'24-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/CO2-cityao/CAAT?style=social)](https://github.com/CO2-cityao/CAAT)
-* Jingyao Xu, Siyang Lu, Yuetong Lu, Dongdong Wang, Yandong Li, Xiang Wei
-* **📝 Summary**: CAAT exploits the high gradient sensitivity of diffusion cross-attention layers, using tiny perturbations on public images to disrupt personalized text-to-image models.
-* **💡 Motivation**: ⭐⭐⭐ (3/5) - Diffusion models are easily fine-tuned with few images, yet current attacks are either slow or require training; a faster, training-free attack is needed.
-* **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Generates adversarial samples by applying PGD-based perturbations and only modifying the cross-attention keys/values within the U-Net to maximally distort text–image alignment during fine-tuning. 
+  * Jingyao Xu, Siyang Lu, Yuetong Lu, Dongdong Wang, Yandong Li, Xiang Wei
+  * **📝 Summary**: CAAT exploits the high gradient sensitivity of diffusion cross-attention layers, using tiny perturbations on public images to disrupt personalized text-to-image models.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - Diffusion models are easily fine-tuned with few images, yet current attacks are either slow or require training; a faster, training-free attack is needed.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Generates adversarial samples by applying PGD-based perturbations and only modifying the cross-attention keys/values within the U-Net to maximally distort text–image alignment during fine-tuning. 
 
 * **[2024.03.28]** **[Imperceptible Protection against Style Imitation from Diffusion Models](https://arxiv.org/abs/2403.19254)** 
-* Namhyuk Ahn, Wonhyuk Ahn, KiYoon Yoo, Daesik Kim, Seung-Hun Nam
-* **📝 Summary**: This work introduces an imperceptible protection mechanism for text-to-image diffusion models by allocating perturbations based on perceptual sensitivity and difficulty prediction.
-* **💡 Motivation**: ⭐⭐⭐ (3/5) - Existing adversarial protections often degrade visual quality, motivating a more perceptually aligned and high-quality defense.
-* **🔧 Method**: ⭐⭐ (2/5) -The approach applies perceptual maps and instance-wise refinement to allocate perturbations based on visual sensitivity, and predicts protection difficulty to adjust perturbation intensity.
+  * Namhyuk Ahn, Wonhyuk Ahn, KiYoon Yoo, Daesik Kim, Seung-Hun Nam
+  * **📝 Summary**: This work introduces an imperceptible protection mechanism for text-to-image diffusion models by allocating perturbations based on perceptual sensitivity and difficulty prediction.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - Existing adversarial protections often degrade visual quality, motivating a more perceptually aligned and high-quality defense.
+  * **🔧 Method**: ⭐⭐ (2/5) -The approach applies perceptual maps and instance-wise refinement to allocate perturbations based on visual sensitivity, and predicts protection difficulty to adjust perturbation intensity.
 
 * **[2024.06.16]** **[Toward effective protection against diffusion based mimicry through score distillation](https://proceedings.neurips.cc/paper_files/paper/2023/hash/088463cd3126aef2002ffc69da42ec59-Abstract-Conference.html)** ![Static Badge](https://img.shields.io/badge/ICLR'24-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/xavihart/Diff-Protect?style=social)](https://github.com/xavihart/Diff-Protect)
-* Haotian Xue, Chumeng Liang, Xiaoyu Wu, Yongxin Chen
-* **📝 Summary**: This work reveals that the encoder in latent diffusion models is the primary vulnerability and introduces efficient plug-and-play protection strategies that accelerate perturbation generation while reducing memory cost.
-* **💡 Motivation**: ⭐⭐⭐ (3/5) - The study aims to provide practical and computationally lightweight protection against diffusion-based mimicry attacks, which current defenses struggle to achieve.
-* **🔧 Method**: ⭐⭐⭐ (3/5) - The approach leverages Score Distillation Sampling to optimize perturbations through the encoder pathway and employs a counterintuitive semantic-loss minimization scheme to produce stronger and more natural defensive perturbations.
+  * Haotian Xue, Chumeng Liang, Xiaoyu Wu, Yongxin Chen
+  * **📝 Summary**: This work reveals that the encoder in latent diffusion models is the primary vulnerability and introduces efficient plug-and-play protection strategies that accelerate perturbation generation while reducing memory cost.
+  * **💡 Motivation**: ⭐⭐⭐ (3/5) - The study aims to provide practical and computationally lightweight protection against diffusion-based mimicry attacks, which current defenses struggle to achieve.
+  * **🔧 Method**: ⭐⭐⭐ (3/5) - The approach leverages Score Distillation Sampling to optimize perturbations through the encoder pathway and employs a counterintuitive semantic-loss minimization scheme to produce stronger and more natural defensive perturbations.
 
 * **[2024.09.17]** **[Step Vulnerability Guided Mean Fluctuation Adversarial Attack against Conditional Diffusion Models](https://dl.acm.org/doi/abs/10.1609/aaai.v38i7.28503)** ![Static Badge](https://img.shields.io/badge/AAAI'24-dc3545)  [![GitHub stars](https://img.shields.io/github/stars/yuhongwei22/MFA?style=social)](https://github.com/yuhongwei22/MFA)
-* Hongwei Yu, Jiansheng Chen, Xinlong Ding, Yudong Zhang, Ting Tang, Huimin Ma
-* **📝 Summary**: This work exploits diffusion models’ sensitivity to noise-mean shifts and introduces the Mean Fluctuation Attack (MFA), which perturbs the estimated noise means during reverse sampling to destabilize the entire generation process.
-* **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - It aims to reveal and leverage step-wise vulnerability variations in the reverse diffusion process to design more effective adversarial attacks against conditional diffusion models.
-* **🔧 Method**: ⭐⭐⭐⭐ (4/5) - It models step vulnerability to guide sampling of attack-critical timesteps and optimizes perturbations on the conditioning input to maximize the expected mean shift of predicted noise.
+  * Hongwei Yu, Jiansheng Chen, Xinlong Ding, Yudong Zhang, Ting Tang, Huimin Ma
+  * **📝 Summary**: This work exploits diffusion models’ sensitivity to noise-mean shifts and introduces the Mean Fluctuation Attack (MFA), which perturbs the estimated noise means during reverse sampling to destabilize the entire generation process.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - It aims to reveal and leverage step-wise vulnerability variations in the reverse diffusion process to design more effective adversarial attacks against conditional diffusion models.
+  * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - It models step vulnerability to guide sampling of attack-critical timesteps and optimizes perturbations on the conditioning input to maximize the expected mean shift of predicted noise.
 
   
 <h4 id="Privacy-Preserving 2025"> 2025 </h4>
 
 * **[2024.05.31]** **[PersGuard: Preventing Malicious Personalization via  Backdoor Attacks on Pre-trained Text-to-Image  Diffusion Models](https://openreview.net/forum?id=5WK8ZO2XJW)**
- * Xinwei Liu, Xiaojun Jia, Yuan Xun, Hua Zhang, Xiaochun Cao
- * **📝 Summary**: Prevent malicious personalization of specific images by injecting backdoors into upstream T2I models so protected images fail to produce personalized outputs while unprotected images retain normal personalization.
- * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing adversarial perturbation defenses for T2I diffusion models lack robustness and cannot fully remove identifiable features.  
- * **🔧 Method**: ⭐⭐⭐ (3/5) - PersGuard injects backdoors into pretrained models with three objectives (Pattern, Erasure, Target), and converts the trigger mechanism into a shortcut such that the backdoor is activated by fine-tuning on a specific image set.
+  * Xinwei Liu, Xiaojun Jia, Yuan Xun, Hua Zhang, Xiaochun Cao
+  * **📝 Summary**: Prevent malicious personalization of specific images by injecting backdoors into upstream T2I models so protected images fail to produce personalized outputs while unprotected images retain normal personalization.
+  * **💡 Motivation**: ⭐⭐⭐⭐ (4/5) - Existing adversarial perturbation defenses for T2I diffusion models lack robustness and cannot fully remove identifiable features.  
+  * **🔧 Method**: ⭐⭐⭐ (3/5) - PersGuard injects backdoors into pretrained models with three objectives (Pattern, Erasure, Target), and converts the trigger mechanism into a shortcut such that the backdoor is activated by fine-tuning on a specific image set.
 
 <h3 id="Privacy-Violating"> Privacy-Violating </h3>
 <h4 id="Privacy-Violating 2024"> 2024 </h4>
@@ -127,10 +127,10 @@ This repository serves as a curated collection of academic papers focusing on **
  <h4 id="Privacy-Violating 2025"> 2025 </h4>
  
  * **[2025.03.13]** **[Silent Branding Attack Trigger-free Data Poisoning Attack on Text-to-Image Diffusion](https://openaccess.thecvf.com/content/CVPR2025/papers/Jang_Silent_Branding_Attack_Trigger-free_Data_Poisoning_Attack_on_Text-to-Image_Diffusion_CVPR_2025_paper.pdf)** ![Static Badge](https://img.shields.io/badge/CVPR'25-dc3545) [![GitHub stars](https://img.shields.io/github/stars/agwmon/silent-branding-attack?style=social)](https://github.com/agwmon/silent-branding-attack)
- * Sangwon Jang, June Suk Choi, Jaehyeong Jo, Kimin Lee, Sung Ju Hwang
- * **📝 Summary**: Proposes a data poisoning method that injects logos into training images so that diffusion models generate them naturally without text triggers.  
- * **💡 Motivation**: ⭐⭐⭐ (3/5) - Repeated visual patterns in training data lead models to reproduce them in outputs even without explicit prompts.  
- * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Finetune SDXL on few-shot logo exemplars, locate natural insertion regions via iterative SDEdit and Detect-and-Compare (OWL-v2 + DINOv2 with augmented references), then paste, style-aligned inpaint, and zoom-refine until detection succeeds.
+   * Sangwon Jang, June Suk Choi, Jaehyeong Jo, Kimin Lee, Sung Ju Hwang
+   * **📝 Summary**: Proposes a data poisoning method that injects logos into training images so that diffusion models generate them naturally without text triggers.  
+   * **💡 Motivation**: ⭐⭐⭐ (3/5) - Repeated visual patterns in training data lead models to reproduce them in outputs even without explicit prompts.  
+   * **🔧 Method**: ⭐⭐⭐⭐ (4/5) - Finetune SDXL on few-shot logo exemplars, locate natural insertion regions via iterative SDEdit and Detect-and-Compare (OWL-v2 + DINOv2 with augmented references), then paste, style-aligned inpaint, and zoom-refine until detection succeeds.
 
 
 
